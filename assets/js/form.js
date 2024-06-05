@@ -27,7 +27,7 @@ function storeBlog(event) {
     blogTitleInput.value = '';
     blogContentInput.value = '';
 
-    localStorage.setItem('blogEntry', JSON.stringify(blogEntries));
+    localStorage.setItem('blogEntries', JSON.stringify(blogEntries));
 };
 
 // USER INTERACTIONS
