@@ -5,6 +5,7 @@ const blogContentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 
 // DATA
+const blogEntries = [];
 
 // FUNCTIONS
 // send submission to localstorage
@@ -18,13 +19,15 @@ function storeBlog(event) {
         blogContent: blogContentInput.value,
     };
 
-    localStorage.setItem('blogEntry', JSON.stringify(blogEntry));
+    // push blogentry object to blog entries array
+    blogEntries.push(blogEntry);
 
     // clear input boxes
     userNameInput.value = '';
     blogTitleInput.value = '';
     blogContentInput.value = '';
 
+    localStorage.setItem('blogEntry', JSON.stringify(blogEntries));
 };
 
 // USER INTERACTIONS
