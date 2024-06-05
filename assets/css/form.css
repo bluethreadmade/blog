@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;
+}
+
+.image {
+    display: flex;
+    justify-self: center;
+    border-right: 2px solid black;
+    padding: 50px;
+}
+
+.form {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
