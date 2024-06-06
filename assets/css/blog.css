@@ -1,0 +1,16 @@
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    float: right;    
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px
+}
