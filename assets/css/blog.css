@@ -14,3 +14,9 @@ header nav ul li {
     display: inline-block;
     padding: 10px
 }
+
+.blog-posts li {
+    border: 1px solid aqua;
+    margin: 5px;
+    padding: 10px 0 0 10px;
+}

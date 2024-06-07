@@ -1,3 +1,31 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: whitesmoke;
+    color: black;
+}
+
+.dark-mode{
+    background-color: black;
+    color:whitesmoke
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    float: right;    
+}
+
+header nav ul {
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px
 }

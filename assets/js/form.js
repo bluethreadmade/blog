@@ -5,12 +5,24 @@ const blogContentInput = document.querySelector('#content');
 const submitButton = document.querySelector('#submit');
 
 // DATA
-const blogEntries = [];
+let blogEntries = [];
+
+// Load existing blog entries from localStorage when the page loads
+window.onload = function() {
+    const storedEntries = localStorage.getItem('blogEntries');
+    if (storedEntries) {
+        blogEntries = JSON.parse(storedEntries);
+    }
+};
 
 // FUNCTIONS
 // send submission to localstorage
 function storeBlog(event) {
     event.preventDefault();
+
+    if (userNameInput.value == '' || blogTitleInput.value == ''|| blogContentInput.value == '') {
+        alert("Fill out all information");
+    };
     
     // object stored in localstorage
     const blogEntry = {
@@ -22,12 +34,15 @@ function storeBlog(event) {
     // push blogentry object to blog entries array
     blogEntries.push(blogEntry);
 
+    localStorage.setItem('blogEntries', JSON.stringify(blogEntries));
+
     // clear input boxes
     userNameInput.value = '';
     blogTitleInput.value = '';
     blogContentInput.value = '';
 
-    localStorage.setItem('blogEntries', JSON.stringify(blogEntries));
+    // send user to blog posts page when blog is submitted    
+    window.location.assign("blog.html");
 };
 
 // USER INTERACTIONS

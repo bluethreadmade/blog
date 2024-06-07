@@ -2,9 +2,8 @@
 // get blog entries array from local storage
 const blogEntries = JSON.parse(localStorage.getItem('blogEntries'));
 const blogPosts = document.querySelector('.blog-posts');
+const backButton = document.querySelector('#back-button')
 
-// get the mode toggle icon
-const modeToggle = document.querySelector('#dark-light-toggle');
 
 // DATA
 
@@ -38,11 +37,8 @@ function renderBlog () {
     };
 };
 
-function displayModeToggle (event) {
-    event.preventDefault();
-    console.log("click");
+function back (event) {
+    window.location.assign("index.html");
 };
 
-// USER INTERACTIONS
-// event listener for light/dark mode
-modeToggle.addEventListener('click', displayModeToggle);
+backButton.addEventListener('click', back);
