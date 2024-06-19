@@ -22,6 +22,8 @@ header{
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
+    border-bottom-style: double;
+    border-width: thick;
 }
 
 header nav ul li {
@@ -50,6 +52,8 @@ header nav ul li {
     justify-content: center;
     flex: 1;
     padding: 20px;
+    border-left-style: double;
+    border-width: thick;
 }
 
 .blog-input{
