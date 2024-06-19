@@ -24,6 +24,7 @@ header{
     align-items: center;
     border-bottom-style: double;
     border-width: thick;
+    margin: 20px
 }
 
 header nav ul li {

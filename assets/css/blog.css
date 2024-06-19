@@ -1,22 +1,10 @@
-header h1 {
-    display: inline-block;
-}
-
-header nav {
-    float: right;    
-}
-
-header nav ul {
-    list-style-type: none;
-}
-
-header nav ul li {
-    display: inline-block;
-    padding: 10px
+header{
+    justify-content: space-between;
 }
 
 .blog-posts li {
-    border: 1px solid aqua;
-    margin: 5px;
+    border: 1px solid black;
+    margin: 20px;
     padding: 10px 0 0 10px;
+    box-shadow: 5px 5px 5px rgb(122, 122, 122);
 }
