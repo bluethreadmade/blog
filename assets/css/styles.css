@@ -21,15 +21,11 @@ body{
     display: flex;
 }
 
-header h1 {
-    display: inline-block;
-}
-
-header nav {
-    float: right;    
-}
-
-header nav ul {
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header nav ul li {
