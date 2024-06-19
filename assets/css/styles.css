@@ -15,6 +15,7 @@ body{
 
     display: flex;
     flex-direction: column;
+    margin: 20px;
 }
 header{
     display: flex;
@@ -30,7 +31,8 @@ header nav ul li {
 
 .container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin: 20px;
 }
 
 .main-image{
@@ -38,11 +40,16 @@ header nav ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .form{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
 }
 
 .blog-input{
@@ -50,6 +57,7 @@ header nav ul li {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px;
+    width: 80%;
 }
 
 label{
@@ -58,4 +66,15 @@ label{
 
 input{
     width: 100%;
+    padding: 5px;
+}
+
+#content {
+    height: 100px;
+}
+
+#submit {
+    height: 25px;
+    width: 100%;
+    align-self: center;
 }
