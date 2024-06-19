@@ -17,6 +17,7 @@ body{
     flex-direction: column;
     margin: 20px;
 }
+
 header{
     display: flex;
     flex-direction: row;

@@ -2,9 +2,34 @@ header{
     justify-content: space-between;
 }
 
-.blog-posts li {
+.blog-posts ul {
     border: 1px solid black;
     margin: 20px;
     padding: 10px 0 0 10px;
     box-shadow: 5px 5px 5px rgb(122, 122, 122);
+}
+
+.blog-posts h3 {
+    border-bottom: 1px solid black;
+    margin: 10px;
+}
+
+.content-class {
+    font-style: italic;
+    margin-left: 15px;
+}
+
+.poster-class {
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-top-style: double;
+    border-width: thick;
+    margin: 20px
 }

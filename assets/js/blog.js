@@ -1,13 +1,7 @@
-// DEPENDENCIES
 // get blog entries array from local storage
 const blogEntries = JSON.parse(localStorage.getItem('blogEntries'));
 const blogPosts = document.querySelector('.blog-posts');
 const backButton = document.querySelector('#back-button')
-
-
-// DATA
-
-// FUNCTIONS
 
 // check if the array is in local storage by console logging
 console.log(blogEntries);
@@ -20,20 +14,23 @@ function renderBlog () {
     for (let i = 0; i <blogEntries.length; i++) {
         const blogEntry = blogEntries[i];
 
-        const li = document.createElement('li');
-        li.textContent = blogEntry.blogTitle;
-        li.setAttribute('data-index', i);
-        blogPosts.appendChild(li);
+        const post = document.createElement('ul');
+        post.setAttribute('data-index', i);
+        blogPosts.appendChild(post);
 
-        const blogPostTitle = document.createElement('p');
-        blogPostTitle.textContent = blogEntry.blogContent;
+            const blogPostTitle = document.createElement('h3');
+            blogPostTitle.textContent = blogEntry.blogTitle;
+            post.appendChild(blogPostTitle)
 
-        li.appendChild(blogPostTitle);
+            const blogPostContent = document.createElement('p');
+            blogPostContent.textContent = blogEntry.blogContent;
+            blogPostContent.classList.add('content-class');
+            post.appendChild(blogPostContent);
 
-        const blogPoster = document.createElement('p');
-        blogPoster.textContent = blogEntry.userName;
-        
-        li.appendChild(blogPoster);
+            const blogPoster = document.createElement('p');
+            blogPoster.textContent = `Posted by: ${blogEntry.userName}`;
+            blogPoster.classList.add('poster-class');
+            post.appendChild(blogPoster);
     };
 };
 
