@@ -16,15 +16,10 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-.container{
-    display: flex;
-}
-
 header{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -32,3 +27,16 @@ header nav ul li {
     display: inline-block;
     padding: 10px;
 }
+
+.container{
+    display: flex;
+}
+
+.main-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
