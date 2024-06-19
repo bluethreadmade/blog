@@ -4,14 +4,21 @@
     text-decoration: none;
 }
 
+.dark-mode{
+    background-color: black;
+    color:whitesmoke;
+}
+
 body{
     background-color: whitesmoke;
     color: black;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.dark-mode{
-    background-color: black;
-    color:whitesmoke
+.container{
+    display: flex;
 }
 
 header h1 {
@@ -27,5 +34,5 @@ header nav ul {
 
 header nav ul li {
     display: inline-block;
-    padding: 10px
+    padding: 10px;
 }
