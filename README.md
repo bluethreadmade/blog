@@ -6,10 +6,10 @@ It contains a link to my portfolio in the footer and a functioning back button.
 The styling has room for improvment!
 
 # Screenshot
-![image](https://github.com/bluethreadmade/blog/assets/169301676/c49d6f99-393c-4e2e-be76-25c4ded8894b)
+![image](https://github.com/bluethreadmade/blog/assets/169301676/8e8d5edf-faeb-404e-8cc0-5d4e3e2220a4)
 ![image](https://github.com/bluethreadmade/blog/assets/169301676/4a751c9e-dddb-4fa4-9876-d698fe84e65e)
 
-![image](https://github.com/bluethreadmade/blog/assets/169301676/a63c9bdd-1389-4c1c-a430-de00ba40e676)
+![image](https://github.com/bluethreadmade/blog/assets/169301676/334a79a5-9ff6-4944-9ac9-e60ce49d956b)
 ![image](https://github.com/bluethreadmade/blog/assets/169301676/1e9b1026-c8e3-429b-b0a0-81dd5086ac98)
 
 # Deployed application link
